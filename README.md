@@ -24,4 +24,15 @@ source /opt/ros/humble/setup.bash
 colcon build --symlink-install
 source install/local_setup.bash
 ```
+## 검증 SW 사용법
+초기 환경 설정과 패키지 빌드를 마친 후 사용
 
+아두이노: ./src/control/sw_verification 경로의 sw_verification.ino 사용
+
+GUI:
+``` 
+cd ~/Autonomous-Driving-AI-SW-Design
+source /opt/ros/humble/setup.bash
+source install/local_setup.bash
+ros2 run serial_communication_pkg sw_verification_node
+```
